@@ -1,3 +1,44 @@
+
+
+/* 1. THEME VARIABLES (Core Logic) */
+:root {
+  --background: #ffffff;
+  --text-primary: #000000;
+  --text-secondary: #4b5563;
+  --border: #e5e7eb;
+  --accent: #f97316; /* Orange-500 */
+  --accent-bg: #fff7ed;
+  --accent-border: #fb923c;
+  --social-bg: #f3f4f6;
+  --shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1);
+  --mint-glow: rgba(0, 231, 170, 0.1);
+}
+
+/* Dark Mode Overrides */
+.dark {
+  --background: #000000;
+  --text-primary: #ffffff;
+  --text-secondary: #9ca3af;
+  --border: rgba(255, 255, 255, 0.1);
+  --accent: #fb923c; /* Orange-400 */
+  --accent-bg: rgba(251, 146, 60, 0.05);
+  --accent-border: rgba(251, 146, 60, 0.3);
+  --social-bg: rgba(255, 255, 255, 0.05);
+  --shadow: 0 10px 15px -3px rgb(0 0 0 / 0.5);
+  --mint-glow: rgba(0, 231, 170, 0.05);
+}
+
+/* 2. GLOBAL RESET */
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* 3. YOUR EXISTING COMPONENTS (Updated with Variables) */
 .counter {
   font-size: 16px;
   padding: 5px 10px;
@@ -5,7 +46,7 @@
   color: var(--accent);
   background: var(--accent-bg);
   border: 2px solid transparent;
-  transition: border-color 0.3s;
+  transition: all 0.3s ease;
   margin-bottom: 24px;
 
   &:hover {
@@ -42,8 +83,7 @@
     z-index: 1;
     top: 34px;
     height: 28px;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg)
-      scale(1.4);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(44deg) rotateY(39deg) scale(1.4);
   }
 
   .vite {
@@ -51,8 +91,7 @@
     top: 107px;
     height: 26px;
     width: auto;
-    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg)
-      scale(0.8);
+    transform: perspective(2000px) rotateZ(300deg) rotateX(40deg) rotateY(39deg) scale(0.8);
   }
 }
 
@@ -87,6 +126,7 @@
     margin-bottom: 16px;
     width: 22px;
     height: 22px;
+    color: var(--accent);
   }
 
   @media (max-width: 1024px) {
@@ -116,7 +156,7 @@
   }
 
   a {
-    color: var(--text-h);
+    color: var(--text-primary);
     font-size: 16px;
     border-radius: 6px;
     background: var(--social-bg);
@@ -125,10 +165,12 @@
     align-items: center;
     gap: 8px;
     text-decoration: none;
-    transition: box-shadow 0.3s;
+    transition: all 0.3s;
+    border: 1px solid var(--border);
 
     &:hover {
       box-shadow: var(--shadow);
+      border-color: var(--accent);
     }
     .button-icon {
       height: 18px;
@@ -181,4 +223,13 @@
     right: 0;
     border-right-color: var(--border);
   }
+}
+
+/* 4. UTILITY CLASSES FOR THEME */
+.text-secondary {
+  color: var(--text-secondary);
+}
+
+.bg-main {
+  background-color: var(--background);
 }
