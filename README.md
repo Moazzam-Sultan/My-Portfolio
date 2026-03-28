@@ -1,16 +1,48 @@
-# React + Vite
+# 🚀 Moazzam Sultan Baig | Software Engineer
+Professional Portfolio showcasing MERN Stack expertise and Java development.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+## 👨‍💻 About Me
+I am a dedicated **Software Engineering student (4th Semester)** at the **University of Central Punjab (UCP)**. With a **CGPA of 3.04**, I focus on bridging the gap between high-end design and robust engineering. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+* 🎓 **Education:** BS Software Engineering (UCP) | ICS (Punjab College)
+* 💡 **Passion:** Building scalable web applications and mastering Data Structures & Algorithms.
+* 🛠️ **Current Focus:** Advanced React patterns and Backend Architecture.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+| Category           | Technologies                                                                 |
+|--------------------|------------------------------------------------------------------------------|
+| **Frontend** | React.js, Tailwind CSS, Framer Motion, HTML5, CSS3                           |
+| **Backend** | Node.js, Express.js, Java (OOP)                                              |
+| **Database** | MongoDB, SQL (Basic)                                                         |
+| **Tools & Others** | Git, GitHub, Vercel, Firebase, Postman                                       |
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## ✨ Key Features of this Project
+- 🌓 **Dynamic Theme Toggle:** Smooth transition between Dark and Light modes using Tailwind CSS and React State.
+- 📱 **Fully Responsive:** Optimized for all screen sizes (Mobile, Tablet, Desktop).
+- 🎭 **Premium Animations:** Integrated with Framer Motion for a high-end user experience.
+- 🚀 **Performance:** Clean code structure for fast loading and SEO optimization.
+
+---
+
+## 📈 Academic Highlights
+- **University:** University of Central Punjab
+- **Semester:** 4th (Current)
+- **Latest GPA:** 3.04
+- **Core Subjects:** Object-Oriented Programming (Java), Data Structures (Java), Database Systems, Professional Practices.
+
+---
+
+## 📂 Project Structure
+```text
+src/
+ ├── assets/        # Images and profile photos
+ ├── components/    # Reusable UI components (Navbar, Hero, etc.)
+ ├── App.jsx        # Main application logic
+ └── index.css      # Tailwind & Global styles
